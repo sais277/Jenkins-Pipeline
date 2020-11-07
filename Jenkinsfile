@@ -9,6 +9,8 @@ pipeline {
         }
         stage('Test') {
           steps {
+            sh 'cd folder'
+            sh 'python first.py'
             echo "Test Done"
             }
         }
