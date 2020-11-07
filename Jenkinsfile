@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                python hello.txt
+                echo(`python hello.txt`)
             }
         }
         stage('Test') {
