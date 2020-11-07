@@ -3,13 +3,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo "$(python hello.txt)"
+                echo "Build Stage"
             }
         }
         stage('Test') {
           steps {
-            cd folder
-            python first.py
+            echo "Test Done"
             }
         }
     }
