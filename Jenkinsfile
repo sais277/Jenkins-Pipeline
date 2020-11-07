@@ -4,8 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "Build Stage"
-                cd folder
-                python first.py
+        
             }
         }
         stage('Test') {
