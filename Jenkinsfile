@@ -7,6 +7,11 @@ pipeline {
                 sh "python hello.py"
             } 
         }
+        stage('Deploy') {
+            steps {
+                echo "Deployment Done"
+            }
+        }
         stage('Test') {
           steps {
             sh 'cd $(pwd)/folder'
